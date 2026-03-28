@@ -1,144 +1,137 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
-  margin-bottom: 30px;
-  background-color: #1a237e;
-  color: white;
-  border-radius: 5px;
+    background-color: #1a237e;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-  margin-bottom: 10px;
+header h2 {
+    font-size: 1.2rem;
+    margin-top: 8px;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+.container {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 20px;
 }
 
-@media (min-width: 768px) {
-  main {
-    grid-template-columns: 2fr 1fr;
-  }
+.activities-section {
+    flex: 2;
 }
 
-section {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+.signup-section {
+    flex: 1;
 }
 
-section h3 {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  color: #1a237e;
+h3 {
+    margin-bottom: 16px;
+    color: #1a237e;
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+    color: #1a237e;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
 }
 
 .activity-card p {
-  margin-bottom: 8px;
+    margin-bottom: 6px;
+    color: #444;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.participants-section {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.participants-list {
+    list-style: none;
+    margin-top: 8px;
 }
 
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 16px;
+.participants-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-button {
-  background-color: #1a237e;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.participant-email {
+    color: #555;
+    font-size: 0.9rem;
 }
 
-button:hover {
-  background-color: #3949ab;
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2px 6px;
+    border-radius: 4px;
 }
 
-.message {
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 4px;
+.delete-btn:hover {
+    background-color: #ffebee;
 }
 
-.success {
-  background-color: #e8f5e9;
-  color: #2e7d32;
-  border: 1px solid #a5d6a7;
+.no-participants {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 6px;
 }
 
-.error {
-  background-color: #ffebee;
-  color: #c62828;
-  border: 1px solid #ef9a9a;
+.signup-form {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.info {
-  background-color: #d1ecf1;
-  color: #0c5460;
-  border: 1px solid #bee5eb;
+.signup-form input,
+.signup-form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
 }
 
-.hidden {
-  display: none;
+.signup-form button {
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 20px;
-  color: #666;
+.signup-form button:hover {
+    background-color: #283593;
 }
